@@ -1,0 +1,226 @@
+@import "./universal.scss";
+@import "./variables.scss";
+
+body {
+    background-color: #ffe9cf;
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: left;
+    background-color: $color-red;
+    width: 100%;
+    padding: 0.625rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
+.header .title {
+    color: white;
+    font-weight: 700;
+}
+
+.header figure .pokedex-icon {
+    width: 4vw;
+    margin-right: 5px;
+    filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(194deg) brightness(104%) contrast(102%);
+}
+
+.header__search {
+    display: flex;
+    button {
+        background-color: white;
+        padding: 0.5rem 0.7rem;
+        border: 1px solid $color-red;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    input {
+        background-color: white;
+        padding: 0.5rem;
+        border: 1px solid $color-red;
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        width: 20vw;
+        outline: none;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 4.5rem;
+}
+
+.main .pokemon section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main .pokemon section .type-icon {
+    width: 3rem;
+}
+
+.main .pokemon section .pokemon-name {
+    padding: 1.5rem;
+}
+
+.main .pokemon figure .pokemon-image {
+    width: 280px;
+}
+
+.pokemon-statics {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+    width: 20rem;
+    height: 80%;
+    padding: 3rem 2rem;
+}
+
+.pokemon-statics .statics {
+    text-align: center;
+    width: 42%;
+}
+
+.pokemon-statics .statics .statics-subtitle {
+    color: $color-red;
+    font-size: 1.5rem;
+}
+
+.pokemon-statics .statics .statics-text {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 25%;
+    flex-wrap: wrap;
+    padding-left: 25%;
+    padding: 40px 10vw;
+}
+
+footer h3 {
+    padding: 2rem;
+}
+
+footer figure {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer figure img {
+    width: 5.5rem;
+    border: 1px solid $color-red;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+}
+
+footer figure img:hover {
+    cursor: pointer;
+    background-color: #f7c7c7;
+}
+
+@media screen and (max-width: 414px) {
+
+    .header {
+        justify-content: center;
+    }
+
+    .header figure .pokedex-icon {
+        width: 12vw;
+    }
+
+    .main {
+        padding: 22rem 1.5rem 2.5rem 1.5rem;
+        height: 100%;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .main .pokemon section {
+        margin-bottom: 1rem;
+    }
+
+    .pokemon {
+        position: absolute;
+        top: 40px;
+    }
+
+    .pokemon-statics {
+        padding: 5rem 2.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .pokemon-statics .statics {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .pokemon-statics .statics .statics-text {
+        text-align: left;
+        width: 35%;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.arrow {
+    width: 3rem;
+    filter: invert(30%) sepia(52%) saturate(7227%) hue-rotate(349deg) brightness(97%) contrast(90%);
+    cursor: pointer;
+}
+
+.other-pokemons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
