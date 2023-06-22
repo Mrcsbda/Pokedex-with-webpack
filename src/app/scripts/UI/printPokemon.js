@@ -9,7 +9,7 @@ const printMainPokemon = (pokemon) => {
         <figure class="main__pokemon-image-container">
           <img
             class="main__pokemon-image"
-            src="${pokemon.sprites.other.dream_world.front_default}"
+            src="${pokemon.sprites.other['official-artwork'].front_default}"
             alt="${pokemon.name} image"
           />
         </figure>
@@ -17,11 +17,11 @@ const printMainPokemon = (pokemon) => {
       <article class="main__pokemon-statics-container">
         <section class="main__pokemon-statics">
           <h3 class="main__statics-subtitle">NO.</h3>
-          <p class="main__statics-text">${pokemon.game_indices[4].game_index}</p>
+          <p class="main__statics-text">${pokemon.id}</p>
         </section>
         <section class="main__pokemon-statics">
           <h3 class="main__statics-subtitle">EXPERIENCIA</h3>
-          <p class="main__statics-text">${pokemon.base_experience}</p>
+          <p class="main__statics-text">${!pokemon.base_experience?"UNKNOWN":pokemon.base_experience}</p>
         </section>
         <section class="main__pokemon-statics">
           <h3 class="main__statics-subtitle">TYPE</h3>
