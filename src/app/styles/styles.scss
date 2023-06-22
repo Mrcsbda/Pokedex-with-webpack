@@ -229,6 +229,10 @@ body {
 
         .footer {
             padding: 1.3rem 1.3rem 3rem 1.3rem;
+
+            &__title {
+                padding: 1rem;
+            }
         }
     }
 }

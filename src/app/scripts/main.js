@@ -5,8 +5,8 @@ import getPokemons from "./services/getPokemons"
 
 document.addEventListener('DOMContentLoaded', async ()=> {
     const data = await getPokemons()
-    const pokemon = await getPokemon(data[0])
-    console.log(pokemon.sprites.other.dream_world.front_default)
+    const pokemonRandomPosition = Math.floor(Math.random() * data.length);
+    const pokemon = await getPokemon(data[pokemonRandomPosition])
     printMainPokemon(pokemon)
 })
 
