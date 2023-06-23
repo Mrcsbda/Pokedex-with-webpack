@@ -1,10 +1,9 @@
 const arrowRightFunc = () => {
 
   let pokemonIndexArrow = JSON.parse(localStorage.getItem("pokemonIndex"));
-  console.log(pokemonIndexArrow);
   pokemonIndexArrow += 4;
-  console.log(pokemonIndexArrow);
   localStorage.setItem('pokemonIndex', JSON.stringify(pokemonIndexArrow));
+  console.log(`lista #${pokemonIndexArrow - 4} a #${pokemonIndexArrow}`)
   return pokemonIndexArrow;
 }
 

@@ -12,71 +12,39 @@
   <header class="header">
     <article class="header__title">
       <figure>
-        <img class="pokedex-icon" src="https://www.svgrepo.com/show/420929/pokeball-pokemon-catch.svg" alt="Pokeball" />
+        <img class="header__pokedex-icon" src="https://www.svgrepo.com/show/420929/pokeball-pokemon-catch.svg"
+          alt="Pokeball" />
       </figure>
-      <h1 class="title">Pokedex</h1>
+      <h1>Pokedex</h1>
     </article>
     <article class="header__search-container">
       <div class="header__search">
-        <button>
+        <button id="header__button">
           <img src="https://www.svgrepo.com/show/511119/search-magnifying-glass.svg" alt="">
         </button>
-        <input type="text" placeholder="Buscar Pokemon">
+        <input type="text" placeholder="Buscar Pokemon" id="header__input">
       </div>
     </article>
   </header>
-  <main class="main">
-    <article class="pokemon">
-      <section>
-        <img class="type-icon" src="https://www.svgrepo.com/show/503027/fire.svg" alt="Icon Fire" />
-        <h2 class="pokemon-name">CHARIZARD</h2>
-      </section>
-      <figure>
-        <img class="pokemon-image"
-          src="https://e7.pngegg.com/pngimages/994/211/png-clipart-charizard-pokemon-firered-and-leafgreen-pikachu-charmeleon-pikachu-dragon-cartoon.png"
-          alt="Pokeball" />
-      </figure>
-    </article>
-    <article class="pokemon-statics">
-      <section class="statics">
-        <h3 class="statics-subtitle">NO.</h3>
-        <p class="statics-text">006</p>
-      </section>
-      <section class="statics">
-        <h3 class="statics-subtitle">LEVEL</h3>
-        <p class="statics-text">100</p>
-      </section>
-      <section class="statics">
-        <h3 class="statics-subtitle">TYPE</h3>
-        <p class="statics-text">FIRE</p>
-      </section>
-      <section class="statics">
-        <h3 class="statics-subtitle">HABILITY</h3>
-        <p class="statics-text">FLAMES</p>
-      </section>
-      <section class="statics">
-        <h3 class="statics-subtitle">HEIGHT</h3>
-        <p class="statics-text">1,7 m</p>
-      </section>
-      <section class="statics">
-        <h3 class="statics-subtitle">WEIGHT</h3>
-        <p class="statics-text">90,5 Kg</p>
-      </section>
-    </article>
+  <main id="pokemonContainer" class="main">
   </main>
-  <footer>
-    <h3 class="footer-subtitle">OTHERS</h3>
-    <div class="other-pokemons-container">
-      <img class="arrow" id="left-arrow" src="https://www.svgrepo.com/show/513806/arrow-left.svg" alt="">
-      <figure class="figure-pokemons" id="figure-pokemons">
-        <img class="image-squirtle"
+  <footer class="footer">
+    <h3 class="footer__title">OTHERS</h3>
+    <div class="footer__others-pokemons-container">
+      <img class="footer__arrow-left" id="left-arrow" src="https://www.svgrepo.com/show/510795/arrow-circle-left.svg"
+        alt="">
+
+      <figure class="footer__pokemons-container" id="figure-pokemons">
+        <img class="footer__pokemon"
           src="https://images.wikidexcdn.net/mwuploads/wikidex/e/e3/latest/20160309230820/Squirtle.png" alt="">
-        <img class="image-bulbasaur" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
-        <img class="image-clefairy"
+        <img class="footer__pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+        <img class="footer__pokemon"
           src="https://images.wikidexcdn.net/mwuploads/wikidex/d/d2/latest/20170615204912/Clefairy.png" alt="">
-        <img class="image-mewtwo" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
+        <img class="footer__pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
       </figure>
-      <img class="arrow" id="right-arrow" src="https://www.svgrepo.com/show/513809/arrow-right.svg" alt="">
+
+      <img class="footer__arrow-right" id="right-arrow" src="https://www.svgrepo.com/show/510797/arrow-circle-right.svg"
+        alt="">
     </div>
   </footer>
 </body>
