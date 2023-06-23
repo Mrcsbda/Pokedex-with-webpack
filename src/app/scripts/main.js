@@ -17,6 +17,9 @@ const searchInput = document.getElementById("header__input");
 
 //Eventos
 document.addEventListener("DOMContentLoaded", async () => {
+  //inicializamos el buscador en cero al cargar la página
+  let pkmText = searchInput;
+  pkmText.value =  "";
   //pedimos los pokemones en la pagina
   const pokemonList = await getPokemons();
   //inicializamos la barra de pokemones y la introducimos
@@ -25,7 +28,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   //procedemos a mostrar un pokemon aleatorio
   const pokemonRandomPosition = Math.floor(Math.random() * pokemonList.length);
   const pokemon = await getPokemon(pokemonList[pokemonRandomPosition])
-  console.log(pokemon)
   printMainPokemon(pokemon)
   //imprimimos los pokemones de la barra inferior
   printFooter(pokemonList, pokemonFooter, pokemonIndex);
@@ -63,12 +65,10 @@ arrowRight.addEventListener("click", async () => {
 searchBtn.addEventListener("click", async () => {
   const pokemonList = await getPokemons();
   let pkmText = searchInput.value;
-  console.log(`usted esta buscando a ${pkmText}`)
   let newIndexQ = 0;
   localStorage.setItem('pokemonIndex', JSON.stringify(newIndexQ));
 
   let newPokemonList = listFilter(pokemonList, pkmText)
-  console.log(newPokemonList);
   printFooter(newPokemonList, pokemonFooter, newIndexQ);
 
 })
