@@ -12,16 +12,17 @@
   <header class="header">
     <article class="header__title">
       <figure>
-        <img class="header__pokedex-icon" src="https://www.svgrepo.com/show/420929/pokeball-pokemon-catch.svg" alt="Pokeball" />
+        <img class="header__pokedex-icon" src="https://www.svgrepo.com/show/420929/pokeball-pokemon-catch.svg"
+          alt="Pokeball" />
       </figure>
       <h1>Pokedex</h1>
     </article>
     <article class="header__search-container">
       <div class="header__search">
-        <button>
+        <button id="header__button">
           <img src="https://www.svgrepo.com/show/511119/search-magnifying-glass.svg" alt="">
         </button>
-        <input type="text" placeholder="Buscar Pokemon">
+        <input type="text" placeholder="Buscar Pokemon" id="header__input">
       </div>
     </article>
   </header>
@@ -30,8 +31,10 @@
   <footer class="footer">
     <h3 class="footer__title">OTHERS</h3>
     <div class="footer__others-pokemons-container">
-      <img class="footer__arrow-left" src="https://www.svgrepo.com/show/510795/arrow-circle-left.svg" alt="">
-      <figure class="footer__pokemons-container">
+      <img class="footer__arrow-left" id="left-arrow" src="https://www.svgrepo.com/show/510795/arrow-circle-left.svg"
+        alt="">
+
+      <figure class="footer__pokemons-container" id="figure-pokemons">
         <img class="footer__pokemon"
           src="https://images.wikidexcdn.net/mwuploads/wikidex/e/e3/latest/20160309230820/Squirtle.png" alt="">
         <img class="footer__pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
@@ -39,7 +42,9 @@
           src="https://images.wikidexcdn.net/mwuploads/wikidex/d/d2/latest/20170615204912/Clefairy.png" alt="">
         <img class="footer__pokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="">
       </figure>
-      <img class="footer__arrow-right" src="https://www.svgrepo.com/show/510797/arrow-circle-right.svg" alt="">
+
+      <img class="footer__arrow-right" id="right-arrow" src="https://www.svgrepo.com/show/510797/arrow-circle-right.svg"
+        alt="">
     </div>
   </footer>
 </body>
