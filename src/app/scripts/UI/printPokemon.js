@@ -20,7 +20,7 @@ const printMainPokemon = (pokemon) => {
           <p class="main__statics-text">${pokemon.id}</p>
         </section>
         <section class="main__pokemon-statics">
-          <h3 class="main__statics-subtitle">EXPERIENCIA</h3>
+          <h3 class="main__statics-subtitle">EXPERIENCE</h3>
           <p class="main__statics-text">${!pokemon.base_experience?"UNKNOWN":pokemon.base_experience}</p>
         </section>
         <section class="main__pokemon-statics">
